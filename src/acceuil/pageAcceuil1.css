@@ -1,46 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/* function CadreCouleur'''''''''''''''''''''''''''' */
 .grandCarde{
-    /* DELAFRIC FB */
-    background: url(../assets/DELAFRICFB.png) no-repeat center center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background: url(../assets/DELAFRICFB.webp) no-repeat center center;
     background-size: cover; /* ou contain selon ton besoin */
-    width: 100%;
     height: 85vh; /* 70% de la hauteur visible (viewport) */
     overflow: hidden; 
 
 }
-.parent {
-    display: flex;
-    justify-content: center; /* centre horizontalement */
-    align-items: center;     /* centre verticalement */
-    height: 70vh;           /* ou toute autre hauteur */
-    margin: 2%;
-  }
+.conteneur {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
 
-  .listParent div {
-    background-color: rgb(196, 210, 146);
-    border: 2px solid rgb(255, 248, 248);
+.Mr h1{
+  color: rgb(252, 252, 252);
+  font-size: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+.titre h2{
+  color: rgb(252, 252, 252);
+  font-size: 35px;
+  margin-left: 97px;
+  margin-top: -25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.slogan h3{
+  color: rgb(252, 252, 252);
+  font-size: 25px;
+  margin-left: 92px;
+  word-wrap: break-word;
+  width: 500px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.conteneurCV{
+  margin-top: 30px;
+  margin-left: 58px;
+  max-width: 400px;
+  width: 100%;
+  list-style: none;
+}
+.conteneurCV .cv{
+  font-family: 'Montserrat', sans-serif;;
+  text-align: center;
+  padding: 8px;
+  width: 180px;
+  background-color: #F1FB7D;
+  border-radius: 50px;
+}
+
+.conteneurCV .wat,.tiktok,.fb{
+  text-align: center;
+  padding: 8px;
+  margin-left:10px;
+  width: 40px;
+  background-color: #F1FB7D;
+  border-radius: 100px;
+}
+.conteneurCV .cv:hover,.wat:hover,.tiktok:hover,.fb:hover{
+  box-shadow: 5px 5px 10px #2c2c2c;
+  cursor: pointer;
+}
+
+.imagekevyn{
+  position: relative;
+}
+.imagekevyn img{
+  position: absolute;
+  top:-90px;
+  right:-10;
+
+  width: 450px;
+
+}
+
+
+  /* function list ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+.listParent {
+    background-color: #a59100;
+    border-radius: 50px;
     width: 80%;
     text-align: center;
     padding: 2px;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 12px;
     
+}
+  .listParent:hover {
+    box-shadow: 5px 5px 10px gray;
+    cursor: pointer;
   }
-  .listParent div ul{
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+   .listParent  ul{
+    border-radius: 50px;
+    font-family: Playfair Display;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 8px;
+    margin: 4px;
 
-  }
+  } 
+
   .listParent ul li{
-    
-        margin:0 100px ; 
-        padding:0; 
-        font-size: large;    
-      
+      color: #2c2c2c;
+        font-size: larger; 
+        font-weight: bold;
+      font-style: italic;    
+  }
+  .listParent ul li:hover{
+    color: rgb(255, 255, 255);
   }
