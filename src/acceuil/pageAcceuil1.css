@@ -47,7 +47,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
-
 }
 
 .conteneurCV{
@@ -86,11 +85,152 @@
   position: absolute;
   top:-90px;
   right:-10;
-
   width: 450px;
+}
+/* mediat query de la function couleur ********************************************************** */
+
+
+@media(min-width:820px) and (max-width:950px){
+  .conteneurCV{
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .Mr h1{
+    font-size: 60px;
+  }
+  .titre h2{
+    font-size: 35px;
+    margin-left: 85px;
+    margin-top: -20px;
+  }
+  .slogan h3{
+    font-size: 20px;
+    margin-left: 85px;
+    width: 400px;
+  }
+  .tout{
+    margin-top: 35px;
+  }
+
+  .imagekevyn img{
+    position: absolute;
+    top:-90px;
+    right:0;
+    width: 400px;
+    border-radius: 0 0  50% 50%;
+  }
 
 }
 
+@media (max-width:819px){
+  .Mr h1{
+    font-size: 50px;
+  }
+  .titre h2{
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: -15px;
+  }
+  .slogan h3{
+    font-size: 18px;
+    margin-left: 70px;
+    width: 300px;
+  }
+  .tout{
+    margin-top: 50px;
+  }
+  .imagekevyn img{
+    position: absolute;
+    top:-50px;
+    right:0;
+    width: 370px;
+    border-radius: 0 0  50% 50%;
+  }
+  .conteneurCV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: -55px;
+  }
+  .conteneurReseau{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding:0;
+  }
+  @media(max-width:700px){
+    .Mr h1{
+      font-size: 35px;
+    }
+    .titre h2{
+      font-size: 20px;
+      margin-left: 50px;
+      margin-top: -13px;
+    }
+    .slogan h3{
+      font-size: 15px;
+      margin-left: 50px;
+      width: 200px;
+    }
+    .imagekevyn img{
+      position: absolute;
+      top:-40px;
+      right:0;
+      width: 320px;
+      border-radius: 0 0  50% 50%;
+    }
+    .conteneurCV .cv{
+      font-size: small;
+      padding: 5px;
+      width: 150px;
+      border-radius: 50px;
+    }
+    
+    .conteneurCV .wat,.tiktok,.fb{
+      text-align: center;
+      padding: 5px;
+      margin-left:8px;
+      width: 35px;
+      border-radius: 100px;
+    }
+
+    @media(max-width:550px){
+      .imagekevyn img{
+        position: absolute;
+        top:-50px;
+        right:0;
+        left: -115px;
+        width: 320px;
+        border-radius: 0 0  50% 50%;
+      }
+
+      @media(min-width:400px) and (max-width:500px){
+
+        .imagekevyn img{
+          position: absolute;
+          top:-50px;
+          right:0;
+          left: -115px;
+          width: 350px;
+          border-radius: 0 0  50% 50%;
+          border: 2px solid black;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media(min-width:700px) and (max-width:819px){
+
+
+}
+
+
+/* ************************************************************************************************************************************ */
 
   /* function list ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
 .listParent {
@@ -125,3 +265,6 @@
   .listParent ul li:hover{
     color: rgb(255, 255, 255);
   }
+/* mediat query de la function list ********************************************************** */
+
+/* ************************************************************************************************************************************ */
