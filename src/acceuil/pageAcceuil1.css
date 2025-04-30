@@ -3,13 +3,13 @@
 
 /* function CadreCouleur'''''''''''''''''''''''''''' */
 .grandCarde{
-  display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
     background: url(../assets/DELAFRICFB.webp) no-repeat center center;
-    background-size: cover; /* ou contain selon ton besoin */
-    height: 85vh; /* 70% de la hauteur visible (viewport) */
+    background-size: cover; 
+    height: 85vh; 
     overflow: hidden; 
 
 }
@@ -206,16 +206,134 @@
         border-radius: 0 0  50% 50%;
       }
 
-      @media(min-width:400px) and (max-width:500px){
+      @media(max-width:500px){
 
+        .grandCarde{
+            all: initial;
+        }
+        .conteneur {
+          margin: 0;
+          padding: 0;
+          background: url(../assets/DELAFRICFB.webp) no-repeat center center;
+          background-size: cover; 
+          height: 85vh; 
+          overflow: hidden;
+        }
+        .conteneur1{
+          display: flex;
+          flex-direction: column; /* Colonne = les uns sous les autres */
+          align-items: center;    /* Centrage horizontal (optionnel) */
+          gap: 10px; 
+          margin-top: -50px;
+        }
+        .Mr h1{
+          font-size: 50px;
+        }
+        .titre h2{
+          font-size: 22px;
+          margin: auto;
+          margin-top: -13px;
+         
+        }
+        .slogan h3{
+          font-size: 16px;
+          margin-left: 50px;
+          width: 200px;
+          font-weight: 500;
+        }
+        .conteneurCV {
+          margin: 22px 0 0 40px;
+        }
+        
+        .conteneurCV .wat,.tiktok,.fb {
+          text-align: center;
+          padding: 5px;
+          margin-left: 8px;
+          width: 30px;
+          border-radius: 150px;
+        }
+        .conteneurReseau{
+          display: flex;
+          justify-content: space-between;
+          width: 150px;
+          margin: 0;
+          padding:0;
+        }
+        
         .imagekevyn img{
           position: absolute;
           top:-50px;
           right:0;
           left: -115px;
           width: 350px;
-          border-radius: 0 0  50% 50%;
-          border: 2px solid black;
+          border-radius: 0 0  50% 50%;          
+        }
+        .listParent{
+          font-size: 11.5px;
+        }
+
+        @media(min-width:300px) and (max-width:400px){
+
+          .conteneur1{
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            gap: 10px; 
+            margin-top: -50px;
+          }
+
+          .Mr{
+            max-width: 100%;
+          }
+          .Mr h1{
+            font-size: 40px;
+          }
+          .slogan{
+            margin-left: -50px;
+          }
+          .titre h2{
+            font-size: 20px;
+            margin: auto;
+            margin-top: -13px;
+           
+          }
+          .slogan h3{
+            font-size: 16px;
+            margin-left: 50px;
+            width: 200px;
+            font-weight: 500;
+          }
+          .conteneurCV {
+            margin: 22px 0 0 40px;
+          }
+          
+          .conteneurCV .wat,.tiktok,.fb {
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+            width: 30px;
+            border-radius: 150px;
+          }
+          .conteneurReseau{
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+            margin: 0;
+            padding:0;
+          }
+          
+          .imagekevyn img{
+            position: absolute;
+            top:-50px;
+            right:0;
+            left: -115px;
+            width: 350px;
+            border-radius: 0 0  50% 50%;          
+          }
+          .listParent{
+            font-size: 10px;
+          }
+
         }
       }
     }
