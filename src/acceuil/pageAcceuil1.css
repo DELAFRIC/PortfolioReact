@@ -374,13 +374,14 @@
 
   } 
 
-  .listParent ul li{
+  .listParent ul li a{
       color: #2c2c2c;
         font-size: larger; 
         font-weight: bold;
-      font-style: italic;    
+      font-style: italic; 
+      text-decoration: none;  
   }
-  .listParent ul li:hover{
+  .listParent ul li a:hover{
     color: rgb(255, 255, 255);
   }
 /* mediat query de la function list ********************************************************** */

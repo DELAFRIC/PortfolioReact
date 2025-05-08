@@ -1,9 +1,7 @@
-import { StrictMode } from 'react'
-import {createRoot} from 'react-dom/client'
 import './pageAcceuil1.css'
 import kevyn from '../assets/kevyn.webp'
-// import LaNav from '../nav/nav.jsx'
-import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 function CadreCouleur() {
     function handleWat() {
@@ -49,21 +47,15 @@ function CadreCouleur() {
 function Liste() {
 
     return <div>
-        {/* <div className='listParent '>
-                            <ul className='row'>
-                                <li className='col-3'>À propos</li>
-                                <li className='col-3'>Services</li>
-                                <li className='col-3'>Projets</li>
-                                <li className='col-3'>Contact</li>
-                            </ul>
-        </div> */}
-        {/* ****************************** */}
-        <nav>
-            <Link to="/apropos/pageapropos">À propos</Link> <br />
-            <Link to="/projet/pageProjet">Projet</Link>
-        </nav>
-
-        {/* ******************************** */}
+         <nav className="listParent">
+                <ul className="row">
+                    {/* <li className='col-3'><Link to="/">Accueil</Link></li> */}
+                    <li className='col-3'><Link to="/apropos/pageapropos">À propos</Link></li>
+                    <li className='col-3'><Link to="/service/pageService">Service</Link></li>
+                    <li className='col-3'><Link to="/projet/pageProjet">Projets</Link></li>
+                    <li className='col-3'><Link to="/contact/pageContact">Contact</Link></li>
+                </ul>
+             </nav>
 
     </div>
 }
@@ -72,7 +64,7 @@ function Sorti() {
     return <>
         <div>
             <CadreCouleur />
-            <Liste />
+            <Liste/>
         </div>
 
     </>
